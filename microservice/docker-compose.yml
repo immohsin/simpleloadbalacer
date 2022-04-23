@@ -1,0 +1,45 @@
+version: "2.4"
+services:
+    server1:
+        build: 
+            context: $PWD
+            dockerfile: $PWD/docker/server.dockerfile
+        ports:
+            - 8081:8081
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8081"
+    server2:
+        ports:
+            - 8082:8082
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8082"
+    server3:
+        ports:
+            - 8083:8083
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8083"
+    server4:
+        ports:
+            - 8084:8084
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8084"
+    server5:
+        ports:
+            - 8085:8085
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8085"
+    server6:
+        ports:
+            - 8086:8086
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8086"
+    server7:
+        ports:
+            - 8087:8087
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8087"
+    server8:
+        ports:
+            - 8088:8088
+        image: "server_image"
+        command: "python -m flask run --host=0.0.0.0 --port=8088"
